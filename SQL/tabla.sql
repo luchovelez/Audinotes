@@ -1,14 +1,54 @@
-CREATE  TABLE IF NOT EXISTS `elementos` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `nombre` VARCHAR(255) NULL ,
-  `orden` INT NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  UNIQUE INDEX `orden_UNIQUE` (`orden` ASC) )
-ENGINE = InnoDB;
-INSERT INTO  `elementos` (`id`, `nombre`, `orden`)
-VALUES 
-	(NULL ,  'luis velez',  '1'), 
-	(NULL ,  'Monica',  '2'), 
-	(NULL ,  'Tres Cuartos',  '3'), 
-	(NULL ,  'unal',  '4'), 
-	(NULL ,  'perro',  '5');
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 22-05-2015 a las 05:56:24
+-- Versión del servidor: 5.6.17
+-- Versión de PHP: 5.5.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de datos: `lista`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `elementos`
+--
+
+CREATE TABLE IF NOT EXISTS `elementos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=163 ;
+
+--
+-- Volcado de datos para la tabla `elementos`
+--
+
+INSERT INTO `elementos` (`id`, `nombre`) VALUES
+(134, 'luis'),
+(137, 'asdas'),
+(138, 'uno'),
+(142, 'dasd'),
+(152, 'Hola'),
+(154, 'One'),
+(158, 'Juan'),
+(159, 'juan'),
+(160, 'Perro'),
+(161, 'Gaytube'),
+(162, 'Escorts');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
